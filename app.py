@@ -83,7 +83,7 @@ if not df.empty:
     
     # 1. VISUALS (Box plot with modern styling)
     fig = px.box(df_melted, x='Group', y=metric_label, color='Group', points="all", 
-                 notched=True, template="plotly_dark")
+                 notched=False, template="plotly_dark")
     st.plotly_chart(fig, use_container_width=True)
 
     # 2. STATISTICAL CALCULATIONS
