@@ -126,7 +126,7 @@ if not df.empty:
                 color = '#27ae60' if val == True else '#c0392b'
                 return f'background-color: {color}; color: white; font-weight: bold'
             
-            st.dataframe(tukey_df.style.applymap(highlight_reject, subset=['reject']), use_container_width=True)
+            st.dataframe(tukey_df.style.map(highlight_reject, subset=['reject']), use_container_width=True)
         
         with col_right:
             st.write("### AI Executive Inference")
