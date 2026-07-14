@@ -9,5 +9,4 @@ __pycache__/
 # Data & OS
 .DS_Store
 *.xlsx
-*.csv
 *.docx
